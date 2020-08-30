@@ -1,0 +1,24 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark indigo" style="height: 60px;">
+    <div class="container">
+      <a class="nav-link btn-back font-weight-bold">
+        <p class="title">Map Search</p>
+      </a>
+      <div style="margin:auto;">
+        <!--<p class="title">Quiz Test</p>-->
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="top-control">
+      <div>
+        <!--          <button mdbBtn type="button" color="primary" outline="true" size="sm" mdbWavesEffect>Left</button>-->
+      </div>
+      <div class="btn-group" role="group" aria-label="Basic">
+        <button mdbBtn type="button" color="primary" outline="true" size="sm" mdbWavesEffect (click)="onChangeMode('map')"><i class="fa fa-map-marker" aria-hidden="true"></i> Map</button>
+<!--        <button mdbBtn type="button" color="primary" outline="true" size="sm" mdbWavesEffect (click)="onChangeMode('photo')"><i class="fa fa-file-image" aria-hidden="true"></i> Photo</button>-->
+        <button mdbBtn type="button" color="primary" outline="true" size="sm" mdbWavesEffect (click)="onChangeMode('gallery')"><i class="fa fa-th" aria-hidden="true"></i> Gallery</button>
+      </div>
+    </div>
+  </div>
+</header>

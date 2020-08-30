@@ -1,0 +1,49 @@
+mdb-card-title {
+  h4 {
+    color: #3f8c56;
+  }
+}
+
+mdb-card-img {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.card-section {
+  justify-content: center;
+}
+
+.property-info {
+  span {
+    padding-right: 10px;
+    strong {
+      color: #332f2f;
+    }
+  }
+}
+::ng-deep {
+  .gm-ui-hover-effect {
+    display: none !important;
+  }
+  .gm-style .gm-style-iw-c {
+    padding: 2px !important;
+    height: 18px;
+    width: 40px;
+    border-radius: 5px;
+  }
+  .gm-style .gm-style-iw-d {
+    overflow: hidden !important;
+  }
+  .gm-style-iw-c:hover {
+    cursor: pointer !important;
+  }
+  .gm-style .gm-style-iw-t::after {
+    width: 8px;
+    height: 8px;
+  }
+  .marker-text {
+    font-size: 11px;
+    font-weight: bold;
+    color: #007bff;
+  }
+}

@@ -1,0 +1,33 @@
+<app-header></app-header>
+<div class="container-fluid">
+  <div class="container">
+    <div class="gallery-view row">
+      <div class="col-lg-3 col-md-4 mapcard" *ngFor="let data of datas">
+        <mdb-card>
+          <!--Card image-->
+          <mdb-card-img src="https://bt-photos.global.ssl.fastly.net/sarmls/320_boomver_2_202020069-1.jpg" alt="Card image cap"></mdb-card-img>
+          <!--Card content-->
+          <mdb-card-body>
+
+            <!--Title-->
+            <mdb-card-title>
+              <h7>{{data.area}} | {{data.city}}</h7>
+              <h4><strong>${{data.listprice | number}}</strong></h4>
+            </mdb-card-title>
+
+            <!--Text-->
+            <mdb-card-text>
+              <div class="property-info">
+                <span *ngIf="data.beds > 0"><strong>{{data.beds}}</strong> bd</span>
+                <span *ngIf="data.baths > 0"><strong>{{data.baths}}</strong> ba</span>
+                <span *ngIf="data.sqft > 0"><strong>{{data.sqft}}</strong> sqft</span>
+              </div>
+            </mdb-card-text>
+
+            <!--              <a href="#" mdbBtn color="primary" mdbWavesEffect>View Detail</a>-->
+          </mdb-card-body>
+        </mdb-card>
+      </div>
+    </div>
+  </div>
+</div>
